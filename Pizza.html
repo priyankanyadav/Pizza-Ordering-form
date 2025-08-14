@@ -1,0 +1,94 @@
+<!--
+    Developer Name: Priyanka Yadav
+    Purpose: Pizza Ordering Form
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order Form</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h2>🍕 Order Your Pizza</h2>
+
+    <form action="http://localhost:3000" method="POST">
+      <!-- Size -->
+      <div class="section">
+        <label><strong>Select Pizza Size:</strong></label>
+        <label><input type="radio" name="size" value="Small" /> Small</label>
+        <label
+          ><input type="radio" name="size" value="Medium" checked />
+          Medium</label
+        >
+        <label><input type="radio" name="size" value="Large" /> Large</label>
+      </div>
+
+      <!-- Toppings -->
+      <div class="section">
+        <label><strong>Choose Toppings:</strong></label>
+        <label
+          ><input type="checkbox" name="toppings" value="Cheese" checked />
+          Cheese</label
+        >
+        <label
+          ><input type="checkbox" name="toppings" value="Pepperoni" />
+          Pepperoni</label
+        >
+        <label
+          ><input type="checkbox" name="toppings" value="Mushrooms" />
+          Mushrooms</label
+        >
+        <label
+          ><input type="checkbox" name="toppings" value="Olives" />
+          Olives</label
+        >
+        <label
+          ><input type="checkbox" name="toppings" value="Onions" />
+          Onions</label
+        >
+      </div>
+
+      <!-- Sauces -->
+      <div class="section">
+        <label><strong>Pick a Sauce:</strong></label>
+        <select name="sauce">
+          <option value="Tomato" selected>Tomato</option>
+          <option value="Barbecue">Barbecue</option>
+          <option value="Pesto">Pesto</option>
+          <option value="Garlic Parmesan">Garlic Parmesan</option>
+        </select>
+      </div>
+
+      <!-- Cheese Type -->
+      <div class="section">
+        <label><strong>Choose Cheese Type:</strong></label>
+        <label
+          ><input type="radio" name="cheese" value="Mozzarella" checked />
+          Mozzarella</label
+        >
+        <label
+          ><input type="radio" name="cheese" value="Cheddar" /> Cheddar</label
+        >
+        <label
+          ><input type="radio" name="cheese" value="No Cheese" /> No
+          Cheese</label
+        >
+      </div>
+
+      <!-- Delivery Option -->
+      <div class="section">
+        <label><strong>Delivery Option:</strong></label>
+        <select name="delivery">
+          <option value="Pickup">Pickup</option>
+          <option value="Home Delivery" selected>Home Delivery</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Place Order</button>
+    </form>
+  </body>
+</html>
